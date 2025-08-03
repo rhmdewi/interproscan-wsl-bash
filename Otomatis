@@ -1,0 +1,8 @@
+bisa juga menjalankan langsung tanpa skript, wajib mengupload semua file ke sistem WSL Ubuntu
+kode:
+export JAVA_OPTS="-Xms512M -Xmx1024M"
+/mnt/c/Users/HP/interproscan-5.73-104.0/interproscan.sh \
+-i /mnt/c/Pisang/fixed/split_part_1_fixed.fasta \
+-f tsv \
+-o /mnt/c/Pisang/fixed/split_part_1_interpro.tsv \
+--disable-precalc -appl Pfam --cpu 1 > interproscan_debug.log 2>&1
